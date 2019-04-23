@@ -17,7 +17,9 @@ for x in lines:
     sepwit.append(x.split(',')[1])
     petlen.append(x.split(',')[2])
     petwit.append(x.split(',')[3])
-    cliris.append(x.split(',')[4])
+    cliris.append(x.split(',')[4].rstrip('\n')) 
+
+#rstrip removes '\n' from print - https://stackoverflow.com/questions/11280282/to-read-line-from-file-without-getting-n-appended-at-the-end
 
 #close file (good practice)  
 f.close()
