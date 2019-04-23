@@ -17,10 +17,26 @@ for x in lines:
 
 f.close()
 
-seplen.sort()
+slmin = float(min(seplen))
+slmax = float(max(seplen))
+sldelta = slmax - slmin
+
+swmin = float(min(sepwit))
+swmax = float(max(sepwit))
+swdelta = swmax - swmin
+
+plmin = float(min(petlen))
+plmax = float(max(petlen))
+pldelta = plmax - plmin
+
+pwmin = float(min(petwit))
+pwmax = float(max(petwit))
+pwdelta = pwmax - pwmin
 
 #get min and max
-print(seplen)  
-print(len(seplen))
-print(min(seplen))
-print(max(seplen))
+#print(seplen)  
+print(slmin)
+print(slmax)
+
+#using floats gives rounding error, must address
+print(sldelta)
