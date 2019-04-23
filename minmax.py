@@ -38,5 +38,5 @@ pwdelta = pwmax - pwmin
 print(slmin)
 print(slmax)
 
-#using floats gives rounding error, must address
-print(sldelta)
+#using floats gives rounding error, must address - used round()
+print(round(sldelta,1))
