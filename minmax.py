@@ -1,12 +1,25 @@
 #use sort()?
 f=open("irisdata.txt","r")
 lines=f.readlines()
-result=[]
+
+seplen=[]
+sepwit=[]
+petlen=[]
+petwit=[]
+cliris=[]
+
 for x in lines:
-   seplen = result.append(x.split(',')[0])
-  
+    seplen.append(x.split(',')[0])
+    sepwit.append(x.split(',')[1])
+    petlen.append(x.split(',')[2])
+    petwit.append(x.split(',')[3])
+    cliris.append(x.split(',')[4].rstrip('\n')) 
+
 f.close()
 
-result.sort()
-print(result)  
-print(len(result))
+seplen.sort()
+
+print(seplen)  
+print(len(seplen))
+print(seplen[0])
+print(seplen[len(seplen)-1])
