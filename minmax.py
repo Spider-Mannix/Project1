@@ -19,7 +19,8 @@ f.close()
 
 seplen.sort()
 
+#get min and max
 print(seplen)  
 print(len(seplen))
-print(seplen[0])
-print(seplen[len(seplen)-1])
+print(min(seplen))
+print(max(seplen))
