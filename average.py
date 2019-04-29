@@ -27,5 +27,7 @@ f.close()
 #slmean = sltot / len(seplen)
 #print(round(slmean,1))
 slmean = numpy.mean(seplen)
+slmed = numpy.median(seplen)
 
 print(slmean)
+print(slmed)
