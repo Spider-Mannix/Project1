@@ -13,7 +13,7 @@ sepwit=[]
 petlen=[]
 petwit=[]
 cliris=[]
-
+ 
 for x in lines:
     seplen.append(x.split(',')[0])
     seplen = [float(i) for i in seplen]
@@ -28,6 +28,8 @@ f.close()
 #print(round(slmean,1))
 slmean = numpy.mean(seplen)
 slmed = numpy.median(seplen)
+slstd = numpy.std(seplen)
 
 print(slmean)
 print(slmed)
+print(round(slstd,2))
