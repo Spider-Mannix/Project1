@@ -20,6 +20,8 @@ for x in lines:
 f.close()
 
 #from problem 10 
-seplen.sort()
-pl.plot(seplen)
+#seplen.sort()
+#pl.plot(seplen)
+sepwit.sort()
+pl.plot(sepwit)
 pl.show()
