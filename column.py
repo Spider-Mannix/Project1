@@ -14,6 +14,10 @@ cliris=[]
 for x in lines:
     #use append to fill in blank lists
     seplen.append(x.split(',')[0])
+    #separate by class
+    slset = seplen[0:50]
+    slvers = seplen[50:100]
+    slgin = seplen[100:150]
     sepwit.append(x.split(',')[1])
     petlen.append(x.split(',')[2])
     petwit.append(x.split(',')[3])
@@ -24,7 +28,11 @@ for x in lines:
 #close file (good practice)  
 f.close()
 
-print(cliris)  
-print(len(cliris))
+print(slset)  
+print(len(slset))
+print(slvers)  
+print(len(slvers))
+print(slgin)  
+print(len(slgin))
 
 #code can now be used in other python files
