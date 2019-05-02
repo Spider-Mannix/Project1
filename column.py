@@ -18,21 +18,28 @@ for x in lines:
     slset = seplen[0:50]
     slvers = seplen[50:100]
     slgin = seplen[100:150]
+
     sepwit.append(x.split(',')[1])
+    swset = sepwit[0:50]
+    swvers = sepwit[50:100]
+    swgin = sepwit[100:150]
+
     petlen.append(x.split(',')[2])
+    plset = petlen[0:50]
+    plvers = petlen[50:100]
+    plgin = petlen[100:150]
+
     petwit.append(x.split(',')[3])
+    pwset = petwit[0:50]
+    pwvers = petwit[50:100]
+    pwgin = petwit[100:150]
+
+
     cliris.append(x.split(',')[4].rstrip('\n')) 
 
 #rstrip removes '\n' from print - https://stackoverflow.com/questions/11280282/to-read-line-from-file-without-getting-n-appended-at-the-end
 
 #close file (good practice)  
 f.close()
-
-print(slset)  
-print(len(slset))
-print(slvers)  
-print(len(slvers))
-print(slgin)  
-print(len(slgin))
 
 #code can now be used in other python files
