@@ -2,8 +2,8 @@
 import column as cl
 
 #sepal length
-slsmin = float(min(cl.slset))
-slsmax = float(max(cl.slset))
+slsmin = min(cl.slset)
+slsmax = max(cl.slset)
 slsdelta = slsmax - slsmin
 
 slvmin = float(min(cl.slvers))
@@ -54,17 +54,9 @@ pwgmax = float(max(cl.pwgin))
 pwgdelta = pwgmax - pwgmin
 
 
+maxes = [slsmax, slvmax, slgmax, swsmax, swvmax, swgmax, plsmax, plvmax, plgmax, pwsmax, pwvmax, pwgmax]
+mins  = [slsmin, slvmin, slgmin, swsmin, swvmin, swgmin, plsmin, plvmin, plgmin, pwsmin, pwvmin, pwgmin]
 
-
-
-
-
-
-
-#get min and max
-#print(seplen)  
-print(plgmin)
-print(slgmax)
-
-#using floats gives rounding error, must address - used round()
-print(round(slgdelta,1))
+print(slsmin)
+print(slsmax)
+print(slsdelta)
