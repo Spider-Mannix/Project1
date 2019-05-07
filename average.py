@@ -4,32 +4,13 @@
 #check numpy stats library for useful information
 
 import numpy
+import column as cl 
 
-f=open("irisdata.txt","r")
-lines=f.readlines()
 
-seplen=[]
-sepwit=[]
-petlen=[]
-petwit=[]
-cliris=[]
- 
-for x in lines:
-    seplen.append(x.split(',')[0])
-    seplen = [float(i) for i in seplen]
-    sepwit.append(x.split(',')[1])
-    petlen.append(x.split(',')[2])
-    petwit.append(x.split(',')[3])
-    cliris.append(x.split(',')[4].rstrip('\n')) 
+slsmean = numpy.mean(cl.slset)
+slsmed = numpy.median(cl.slset)
+slsstd = numpy.std(cl.slset)
 
-f.close()
-#sltot = sum(seplen)
-#slmean = sltot / len(seplen)
-#print(round(slmean,1))
-slmean = numpy.mean(seplen)
-slmed = numpy.median(seplen)
-slstd = numpy.std(seplen)
-
-print(slmean)
-print(slmed)
-print(round(slstd,2))
+print(slsmean)
+print(slsmed)
+print(round(slsstd,2))
